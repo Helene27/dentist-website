@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treatments</title>
+    <link rel="icon" type="image/favicon" href="./images/HDlogoFavicon.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        ul li::before {
+            content: '\25B6'; /* Unicode for pil ned (▼) */
+            margin-right: 8px;
+    
+        }
+    </style>
+   
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <div class="wrapper">
+        <div class="Tcontainer">
+            <h1>Behandlinger</h1>
+
+
+            <div class="Tsubheader" id="general-treatments">Generell Tannbehandling</div>
+            <ul class="ultreatments">
+
+                <li class="treatments" onclick="toggleDescription('general1')">Studentrabatt tannlege (primært for aldersgruppen 21-24 år)
+                    <div id="general1" class="description">
+                        Hos oss betaler 12-24åringer kun 25% av Helse- og omsorgsdepartementets (HOD) takster!
+                        Bleking av tenner og andre estetiske behandlinger må betales fullt ut av pasienten selv. 
+                    </div>
+                </li>
+
+                <li class="treatments" onclick="toggleDescription('general2')">Studentrabatt tannlege (25-30 år)
+                    <div id="general2" class="description">
+                        Vi tar studenters tannhelse på alvor. Vi tilbyr full undersøkelse og akutthjelp.
+                        Pga. stor etterspørsel innfører vi 10% studentrabatt på undersøkelse og behandling fra og med 21.08.23 for deg mellom 25 og 30 år!
+                        Vi har høy kompetanse og bred erfaring med trygg og smertefri fjerning av visdomstenner.
+                    </div>
+                </li>
+
+                <li class="treatments" onclick="toggleDescription('general3')">Ordinær undersøkelse med røntgenbilde og rens
+                    <div id="general3" class="description">
+                        Ved en ordinær undersøkelse ser tannlegen over alle tenner samt tannkjøtt og slimhinner. Det blir også tatt røntgenbilder for å kontrollere området mellom tennene. Rens av tenner utføres ved behov.
+                    </div>
+                </li>
+
+                <li class="treatments" onclick="toggleDescription('general4')">Fjerning av visdomstenner
+                    <div id="general4" class="description">
+                        De fleste får visdomstenner. De som ikke har plass eller får vondt i visdomstennene, må fjerne dem. Visdomstenner fjernes ved vanlig tanntrekking eller ved et lite og enkelt kirurgisk inngrep. Det kommer an på hvordan visdomstannen ligger og hvor mye av den som synes. Dette kontrollerer vi med et røntgenbilde.
+                        Det blir ofte satt noen sting som fjernes eller løses opp av seg selv etter ca en uke.
+                    </div>
+                </li>
+
+                <li class="treatments" onclick="toggleDescription('general5')">Akutt tannlege og tannlegevakt
+                    <div id="general5" class="description">
+                        Akutt tannlege og tannlegevat
+                        Vi tilbyr time på dagen når du trenger hjelp med tannpine eller knekt tann. Bestill time her på vår nettside eller ring oss på 73 91 13 13.
+                    </div>
+                </li>
+
+                <li class="treatments" onclick="toggleDescription('general6')">Allmenn tannbehandling
+                    <div id="general6" class="description">
+                        Vi utfører tradisjonell allmenn tannbehandling som fyllinger, rotfyllinger og forebyggende tannbehandling. Vi har også bred kompetanse og lang erfaring innen andre behandlinger som vi utfører ved behov. Vi tilbyr årlig innkalling.
+                    </div>
+                </li>
+            </ul>
+
+            <div class="Tsubheader" id="aesthetic-treatments">Estetiske Behandlinger</div>
+            <ul class="ultreatments">
+                <li class="treatments" onclick="toggleDescription('aesthetic1')">Tannbleking
+                    <div id="aesthetic1" class="description">
+                        Bleking av tenner er svært etterspurt hos oss og vi kan derfor tilby tannbleking til byens sannsynligvis rimeligste pris. Nesten alle tenner kan blekes, men tannlegen må bedømme situasjonen og se om tennene trenger behandling først. Bleking ikke er skadelig om det utføres på riktig måte. Du må ha en undersøkelse med røntgenbilder og være ferdig behandlet før du kan bleke tennene.
+                        Tannlegen tar avstøpning av tennene dine og lager deretter en tilpasset blekeskinne som du får med deg hjem sammen med blekemiddel til flere behandlinger og informasjon om hvordan du skal gå frem. Vi har både nattbleking og dagbleking. Har du dyp misfarging kan du behandle tennene flere ganger til du oppnår ønsket resultat, men har du relativt lyse tenner holder det med bare noen få runder.
+                    </div>
+                </li>
+
+                <li class="treatments" onclick="toggleDescription('aesthetic2')">Kosmetisk tannpleie
+                    <div id="aesthetic2" class="description">
+                        Misfarginger, mellomrom, ujevnheter, stygge fyllinger i framtenner og sorte amalgamfyllinger kan vi gjøre noe med. Det finnes flere muligheter å velge mellom innen kosmetisk tannpleie. Etter undersøkelse finner tannlegen i samråd med deg den beste løsningen
+                    </div>
+                </li>
+
+                <li class="treatments" onclick="toggleDescription('aesthetic3')">Porselensfasetter
+                    <div id="aesthetic3" class="description">
+                        Porselensfasetter og skallkroner benytter vi når det er ønskelig med restaurering av tenner hvor det er bra med tannsubstans, og ønskelig med bedre utseende i front.
+                        Dette er porselensskall som blir limt utenpå tennene. Lite tannsubstans trenger å slipes ned. Avtrykk tas og tanntekniker lager fasettene.
+                    </div>
+                </li>
+
+                <li class="treatments" onclick="toggleDescription('aesthetic4')">Krone
+                    <div id="aesthetic4" class="description">
+                        Når mye av tannen er ødelagt er ofte krone den beste løsningen på lang sikt. En krone består ofte av rent keram(porselen), zirconia eller av en metallkjerne dekket med porselen. Kroner til fortenner består stort sett kun av porselen eller zirconia. Fargen tilpasses den opprinnelig fargen på pasientens tenner.
+                        Først blir tannen slipt til for å gjøre plass til kronen. Deretter vil det bli tatt avstøpning av tennene som tanntekniker bruker til å fremstille kronen. Til slutt sementeres kronen fast hos tannlegen.
+                    </div>
+                </li>
+
+                <li class="treatments" onclick="toggleDescription('aesthetic5')">Bro
+                    <div id="aesthetic5" class="description">
+                        Hvis du mangler en eller flere tenner kan dette erstattes ved å lage en bro. Du vil da få kroner på nabotenner ved siden av tannen som mangler. Det lages et mellomledd/kunstig tann som henger fast i de to kronene.
+                    </div>
+                </li>
+            </ul>
+
+            <div class="Tsubheader" id="complex-treatments">Komplekse behandlinger</div>
+            <ul class="ultreatments">
+                <li class="treatments" onclick="toggleDescription('complex1')">Restaurering av ødelagte tenner
+                    <div id="complex1" class="description">
+                        Vi kan reparere selv de mest ødelagte tannsett ved hjelp av skånsomme og moderne behandlingsmetoder. Ta kontakt for en undersøkelse, så vil vi gå gjennom sammen med deg hvilke muligheter som finnes. Vi tilbyr blant annet implantat, kroner og broer.
+                    </div>
+                </li>
+
+                <li class="treatments" onclick="toggleDescription('complex2')">Rotfylling
+                    <div id="complex2" class="description">
+                        Vi må rotfylle tenner når det er blitt en skade på nerven, eller at den er død. Det er ingen grunn til å være engstelig for at behandlingen skal gjøre vondt. Behandlingen utføres med lokalbedøvelse og du vil ikke kjenne noe under behandlingen. Ved rotfylling fjerner tannlegen nerven, renser kanalen som nerven har vært i, og fyller opp med rotfyllingsmateriale.
+                        Til slutt det fremstilles en plastfylling og som regel en krone som erstatning for den skadde tannkronen.
+                    </div>
+                </li>
+            </ul>
+        
+
+            <div class="Tsubheader" id="bite-treatments" onclick="toggleultreatments('ultreatments')">Spesialiserte behandlinger </div>
+            <ul class="ultreatments">
+                <li class="treatments" onclick="toggleDescription('bite1')">Bittskinne
+                    <div id="bite1" class="description">
+                        Det hender at vi biter tenner sammen eller gnisser tennene mot hverandre. Dette kan ofte være i forbindelse med stress og forekommer ubevisst og om natten. Om en sliter med stive og ømme kjeveledd eller hodepine kan bittskinne være løsningen. Bittskinnen dekker biteoverflaten på alle overkjevetennene. Ved denne bittskinnen tar man avstøpning som sendes tanntekniker som lager skinne innen ca. en uke.
+                        HELFO refunderer deler av beløpet på hard bittskinne ved kjeveleddsproblemer.
+                    </div>
+                </li>
+
+                <li class="treatments" onclick="toggleDescription('bite2')">Proteser
+                    <div id="bite2" class="description">
+                        Hver enkelt protese/gebiss tilpasses den enkelte pasient. Behandlinger starter med avstøpning hos tannlegen. Deretter lager tannteknikeren protesen som tannlegen justerer til den sitter slik den skal. Delprotese brukes når man har noen egne tenner som man kan bruke. Når alle tennene er borte, lages en helprotese. Om du ikke klarer å bruke gebiss/proteser, eller ikke ønsker løse tenner, kan du få satt inn implantat. Snakk med tannlegen om dette.
+                    </div>
+                </li>
+
+                <li class="treatments" onclick="toggleDescription('bite3')">Implantat
+                    <div id="bite3" class="description">
+                        Om du mangler en eller flere tenner er det mulighet for å sette inn et implantat, en skrue av titan, slik at tapt tann blir erstattet. Implantatbehandling utføres smertefritt ved å sette lokal bedøvelse. 
+                    </div>
+                </li>
+            </ul>
+        
+        </div>
+        
+        <button type="button" class="booking-btn" onclick="window.location.href='booking.html';">Bestill time</button>
+        <div id="footer"></div>
+    </div>
+
+    <script src="scripts/dropdown.js"></script>
+    <script src="scripts/header.js"></script>
+    <script src="scripts/footer.js"></script>
+    <script src="scripts/button.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+.DS_Store
+.AppleDouble
+.LSOverride
+*.iCloud
+
+.vscode
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+

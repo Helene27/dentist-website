@@ -1,0 +1,76 @@
+html {
+    font-family: "PT Serif";
+}
+
+body {
+    background-color: lavenderblush;
+    text-align: center;
+    line-height: 150%;
+}
+
+h1 {
+    margin-bottom: 5px;
+}
+
+p {
+    text-align: left;
+}
+
+
+.centered-div {
+    padding: 15px;
+    padding-top: 5px;
+    border: 10px solid rgb(243, 209, 209);
+    margin: auto;
+    margin-top: 15px;
+    max-width: 90ch;
+}
+
+
+
+hr {
+    margin: auto;
+    width: 50%;
+    border: 1px solid rgb(243, 209, 209);
+
+}
+
+
+ul li {
+    list-style: none;
+    padding: 5px 20px;
+    background-image: url("images/star.png");
+    background-repeat: no-repeat;
+    background-position: left 12px;
+    background-size: 10px;
+    text-align: left;
+}
+
+.wrapper {
+    min-height: 100vh;
+    position: relative;
+}
+
+footer {
+    background-color: rgb(243, 209, 209);
+    height: 100px;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+
+table {
+    border: 2px solid rgb(243, 209, 209);
+    letter-spacing: 1px;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+td, th {
+    border: 2px solid rgb(243, 209, 209);
+}
+
+img {
+    width: 80%;
+}

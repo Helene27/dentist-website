@@ -1,0 +1,463 @@
+/*---------- CSS - General ------------*/ 
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: rgba(255, 252, 254, 100);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    line-height: 1.8em;
+    color: #333;
+}
+
+.wrapper {
+    position: relative;
+    padding-top: 105px;
+    width: 100%;
+    min-height: 60vh;
+}
+
+h1{
+    text-align: center;
+}
+
+a {
+    color: #e0c9b3ff;
+}
+
+
+/*---------- CSS - Header ------------*/ 
+#header header{
+    position: fixed;
+    height: 100px;
+    background-color: rgba(255, 252, 254, 100) ;
+    width: 100%;
+    z-index: 5;
+    display: flex;
+    justify-content: left;
+}
+
+#navbar-container {
+    margin-left: auto; 
+    margin-right: auto;
+    display: flex;
+}
+
+#header header img {
+    height: 90%;
+}
+
+.nav-btn {
+    font-size: large;
+    background-color:rgba(255, 252, 254, 100);
+    color:#333;
+    padding: 0 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-btn:hover {
+    border-bottom: 2px solid #333;
+}
+
+
+/*---------- CSS - Footer ------------*/ 
+
+#footer footer {
+    background-color: rgb(71, 71, 71);
+    height: 200px;
+    width: 100%;
+    bottom: 0;
+    position: relative;
+    margin-top: 20px;
+}
+
+#foot-logo {
+    float: left;   
+    width: 20%;
+}
+
+.pic-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.foot-box {
+    margin-top: 20px;
+}
+
+.foot-text {
+    color: rgb(190, 190, 190);
+    margin-left: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#mail-img {
+    width: 50px;
+}
+
+#phone-img {
+    width: 50px;
+}
+
+#dest-img {
+    width: 50px;
+}
+
+#book-img {
+    width: 80px;
+}
+
+
+
+/*---------- CSS - Homepage ------------*/ 
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 400px;
+}
+
+.item {
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.item:not(:first-child) {
+    border: 1px solid #333;
+}
+
+
+#item-1 {
+    grid-column: span 4;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#item-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 55%;
+} 
+
+#item-7 {
+    grid-column: span 4;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#item-2 {
+    grid-row: span 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+#item-3 {
+    grid-row: span 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+#item-4 {
+    grid-row: span 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+#item-5 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+#item-6 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+
+.home-btn {
+    background-color: rgb(255,229,229);
+    color:black;
+    padding: 10px 20px;
+    border: 2px solid rgb(243,209,209);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.home-btn:hover {
+    background-color: rgb(243,209,209);
+    
+}
+
+#minimap {
+    width: 100%;
+    object-fit: cover;
+}
+
+#home-frame {
+    height: 300px;
+    border: 0;
+}
+
+
+/*---------- CSS - About Us ------------*/ 
+
+.Acontainer{
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid  #f3d1d1ff;
+} 
+
+#about-pics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#right-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#pics-head {
+    grid-column: span 2;
+}
+
+
+
+/*---------- CSS - Treatments ------------*/ 
+.Tcontainer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 2px solid  #f3d1d1ff ;
+}
+
+.Tsubheader {
+    background-color: #f3d1d1ff ;
+    color: #333;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+
+.ultreatments {
+    list-style-type: none;
+    padding: 0;
+}
+
+.treatments {
+    margin-left: 10px;
+    line-height: 3;
+}
+
+/* også til prices */
+.description {
+    display: none;
+    margin-left: 20px;
+}
+.ultreatments li::before {
+    content: '\25B6'; /* Unicode for pil ned (▼) */
+    margin-right: 8px;
+
+}
+
+/* ---------CSS - Prices------------- */
+
+.service {
+    max-width: 800px;
+    background-color: white;
+    padding: 5px;
+    margin: 10px auto;
+    border: 2px solid #f3d1d1ff ;
+    border-radius: 5px;
+}
+
+.service h2 {
+    font-size: 20px;
+}
+
+.service p {
+    margin: 10px 0;
+}
+
+#pris-info {
+    text-align: center;
+}
+
+.booking-btn {
+    background-color: rgb(255,229,229);
+    color:black;
+    padding: 10px 20px;
+    border: 2px solid rgb(243,209,209);
+    border-radius: 5px;
+    cursor: pointer;
+    width: 815px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1%;
+} 
+.booking-btn:hover {
+    background-color: rgb(243,209,209);
+
+}
+
+
+/* ---------CSS - Booking------------- */
+.form {
+    text-align: center;
+}
+#disclaimer {
+    font-size: x-small;
+}
+input[type="checkbox"] {
+    accent-color:#e0c9b3ff; 
+}
+
+.form{ 
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 2px solid  #f3d1d1ff
+}
+
+label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+button[name="dager"]{
+    background-color:#f1e8dfff;
+    color:black;
+    padding: 10px 20px;
+    border: 2px solid #e0c9b3ff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[name="dager"]:hover{
+    background-color: #e0c9b3ff;
+}
+
+button[name="dager"].selected{
+    background-color: #e0c9b3ff;
+    color: black;
+}
+
+input[type="date"],
+input[type="time"],
+input[type="text"],
+input[type="tel"],
+input[type="number"], 
+input[type="email"],
+select, textarea  {
+    width: 90%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+
+/* ---------personvernerklæring------------ */ 
+
+#personvernerklæringen{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 700px;
+    margin: 0 auto; 
+    text-align: left;
+}
+
+#personvernerklæringen li {
+    list-style: none;
+    padding: 5px 20px;
+    background-repeat: no-repeat;
+    background-position: left 12px;
+    background-size: 10px;
+} 
+#personvernerklæringen li h4 {
+    border-bottom: #333 1px solid;
+}
+
+/* ---------Contact Us------------ */
+.CUcontainer{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 2px solid #f3d1d1ff ;
+}
+
+#buss-info {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#contact-minimap {
+    width: 100%;
+}
+
+#contact-frame {
+    width: 100%;
+    border: 0;
+    height: 400px;
+}
+
+
+/* ---------Bekreftelsesside------------ */
+.BS {
+    max-width: 800px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}

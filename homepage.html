@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/favicon" href="./images/HDlogoFavicon.png">
+
+</head>
+<body>
+    <div id="header"></div>
+    <div class="wrapper">
+
+        <div class="content">
+            <div class="item" id="item-1"> 
+
+                <img id="mainPic">
+                <div class="pictures">
+                    <img src="./images/valentinlystsenteret.jpeg" style="display: none" alt="valentinlystsenteret">
+                    <img src="./images/slider2.jpg" style="display: none" alt="tannlegebilde">
+                    <img src="./images/slider3.jpg" style="display: none" alt="tannlegebilde">
+                    <img src="./images/slider4.jpg" style="display: none" alt="tannlegebilde">
+                </div>
+
+            </div>
+            <div class="item" id="item-7">
+                <h1>Tannlege Heidi Dalåmo</h1>
+            </div>
+            <div class="item" id="item-2">
+                <h2>Om tannlegen</h2>
+                <p>Heidi Dalåmo er utdannet tannlege og har kontor hos Valentinlyst tannlegekontor. Der jobber hun for bedre tannhelse sammen med sine to assistenter. Interessert i å lese mer om Heidi og hennes bakgrunn? Les mer her: </p>
+                <button type="button" class="home-btn" onclick="window.location.href='about.html';">Om oss</button>
+            </div>
+            <div class="item" id="item-3">
+                <div id="minimap">
+                    <h2>Her ligger vi:</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1784.9244693760786!2d10.4426154!3d63.42493820000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x466d31adee8fa88d%3A0x377e787f232b2c59!2sAnders%20Estenstads%20veg%2014%2C%207046%20Trondheim!5e0!3m2!1sno!2sno!4v1699556775670!5m2!1sno!2sno" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="home-frame"></iframe>
+                </div>            
+            </div>
+            <div class="item" id="item-4">
+                <h2>Studentrabatt</h2>
+                <p>Heidi er opptatt av studentene i byen, og for å lette deres økonomiske trykk tilbyr hun 25% studentrabatt for studenter i alderen 21-24 år. Studenter i alderen 25-30 år får 10% studentrabatt.</p>
+                <p>Rabatten legges til på slutten av behandlingen ved framvisning av gyldig studentbevis.</p>
+                <button type="button" class="home-btn" onclick="window.location.href='booking.html';">Bestill time</button>
+
+            </div>
+            <div class="item" id="item-5">
+                <h2>Behandlinger</h2>
+                <p>Heidi tilbyr en rekke ulike tannbehandlinger. Se hvilke her:</p>
+                <button type="button" class="home-btn" onclick="window.location.href='treatments.html';">Se behandlinger</button>
+            </div>
+            <div class="item" id="item-6">
+                <h2>Timebestilling</h2>
+                <p>Vondt i en tann? Lenge siden du har fått munnen sjekket? Bestill time her:</p>
+                <button type="button" class="home-btn" onclick="window.location.href='booking.html';">Bestill time</button>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script src="scripts/header.js"></script>
+    <script src="scripts/footer.js"></script>
+    <script src="scripts/picslider.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="icon" type="image/favicon" href="./images/HDlogoFavicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <div class="wrapper">
+        <div class="form">
+            <h1>Timebestilling</h1>
+            <p>Fyll inn informasjonen under for å bestille time;</p>
+            <form action="./bekreftelsesside.html" method="post" onsubmit="return validateForm()">
+                <label>Fornavn: *</label>
+                <input type="text" name="Fornavn" required>
+               
+                <label>Etternavn: *</label>
+                <input type="text" name="Etternavn" required>
+                
+                <label>Adresse: *</label>
+                <input type="text" name="Adresse" required>
+               
+                <label>Postnummer: *</label>
+                <input type="number" name="Postnummer" required>
+
+                <label>By: *</label>
+                <input type="text" name="By" required>
+               
+                <label>E-postadresse: *</label>
+                <input type="email" name="E-postadresse" required maxlength="30">
+                
+                <label>Telefon: *</label>
+                <input type="tel" name="Telefon" required maxlength="30">
+                
+                <label>Hvilke dager passer best for deg?</label>  <br>
+                    <button type="button" id="mandag" name="dager" value="mandag" onclick="toggleDay(this)">Mandag</button>    
+                    <button type="button" id="tirsdag" name="dager" value="tirsdag" onclick="toggleDay(this)">Tirsdag</button>    
+                    <button type="button" id="onsdag" name="dager" value="onsdag" onclick="toggleDay(this)">Onsdag</button>    
+                    <button type="button" id="torsdag" name="dager" value="torsdag" onclick="toggleDay(this)">Torsdag</button>    
+                    <button type="button" id="fredag" name="dager" value="fredag" onclick="toggleDay(this)">Fredag</button>    
+                
+                <label>Vennligst velg ønsket tidsrom for timen:</label> <br>
+                    <input type="checkbox" name="service" value="kl.09-10">Kl.08.00-11.00
+                    <input type="checkbox" name="service" value="kl.09-10">Kl.11.00-14.00
+                    <input type="checkbox" name="service" value="kl.09-10">Kl.14.00-16.00 <br>
+
+                <p id="disclaimer">Du kan fortsette uten å velge dag eller tidspunkt. Klinikken velger da dag og tidspunkt for deg.
+                    Dersom det ikke passer med foreslått time, må du selv opplyse om dette.</p>
+                    
+                <label>Hvilken behandling ønsker du?</label>
+                <select name="Behandlinger" required>
+                    <option value="" disabled selected>Velg behandling</option>
+                    <option value="General dental treatment">Generelle tannbehandlinger</option>
+                    <option value="Aesthetic treatments">Estetiske behandlinger</option>
+                    <option value="Complex treatments">Komplekse behandlinger</option>
+                    <option value="Bite and dental position">Bitt- og tannposisjon</option>
+                    <option value="Annet">Annet</option>
+                </select>
+                
+                <label>Annen informasjon:</label> <br>
+                <textarea rows="4" cols="40" id="comments"></textarea>
+                <br>
+                <input type="checkbox" name="service" value="Jeg har lest og godkjenner personvernerklæringen" required> 
+                Jeg har lest og godkjenner <a href="personvernerkleringen.html" target="_blank">personvernerklæringen</a>
+                <br> <br>
+
+                <input type="submit" name="Sumbit">
+
+            </form>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script src="scripts/header.js"></script>
+    <script src="scripts/footer.js"></script>
+    <script src="scripts/button.js"></script>
+    <script src="scripts/formvalidation.js"></script>
+
+</body>
+</html>

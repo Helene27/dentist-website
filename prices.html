@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prices</title>
+    <link rel="icon" type="image/favicon" href="./images/HDlogoFavicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- icon from https://www.w3schools.com/icons/fontawesome_icons_video.asp -->
+</head>
+<body>
+    <div id="header"></div>
+    <div class="wrapper">
+        <h1> Prisliste </h1>
+        <p id="pris-info">Merk at prisene er start-priser, og sluttprisen vil kunne variere ved individuelle forskjeller og kombinerte behandlinger. <br>
+            Spør din behandler dersom du ønsker et individuelt prisanslag.</p>
+
+        <div class="service">
+            <h2 class="prices" onclick="toggleDescription('p1')"><i class="fa fa-play" style="font-size:15px; margin-right: 10px;"></i>Undersøkelse og rens</h2>
+            <div id="p1" class="description">
+                <p>Tannundersøkelse fra kr. 1.290</p>
+                <p>Inkludert rens, tannrøntgen og tillegg for adminstrasjon og forbruksvarer.</p>
+            </div>
+        </div>
+
+        <div class="service">
+            <h2 class="prices" onclick="toggleDescription('p2')"><i class="fa fa-play" style="font-size:15px; margin-right: 10px;"></i>Røntgen</h2>
+            <div id="p2" class="description">
+                <p>Røntgenbilde fra kr. 95</p>
+                <p>OPG (panoramarøntgen) fra kr. 720</p>
+            </div>
+        </div>
+
+        <div class="service">
+            <h2 class="prices" onclick="toggleDescription('p3')"><i class="fa fa-play" style="font-size:15px; margin-right: 10px;"></i>Konsultasjon</h2>
+            <div id="p3" class="description">
+                <p>Konsultasjon/akuttkonsultasjon: 790 kr</p>
+            </div>
+        </div>
+
+        <div class="service">
+            <h2 class="prices" onclick="toggleDescription('p4')"><i class="fa fa-play" style="font-size:15px; margin-right: 10px;"></i>Tannrengjøring</h2>
+            <div id="p4" class="description">
+                <p>Enkel rens i forbindelse med årskontroll/undersøkelse: 590 kr</p>
+                <p>Grundig rens: 1790 kr</p> 
+                <p>Hygienetiltak: 490kr</p> 
+            </div>
+        </div> 
+
+        <div class="service">
+            <h2 class="prices" onclick="toggleDescription('p5')"><i class="fa fa-play" style="font-size:15px; margin-right: 10px;"></i>Bedøvelse</h2>
+            <div id="p5" class="description">
+                <p>Bedøvelse: 220kr</p>
+            </div>
+        </div> 
+
+        <div class="service">
+            <h2 class="prices" onclick="toggleDescription('p6')"><i class="fa fa-play" style="font-size:15px; margin-right: 10px;"></i>Fyllinger</h2>
+            <div id="p6" class="description">
+                <p>Hvit fylling kompositt 1 flate: 1290 kr</p>
+                <p>Hvit fylling kompositt 2 flater: 1790 kr</p>
+                <p>Hvit fylling kompositt 3 flater: 2190 kr</p>
+                <p>Hvit fylling kompositt 4 flater: 2790 kr</p>
+            </div>
+        </div>
+
+        <div class="service">
+            <h2 class="prices" onclick="toggleDescription('p7')"><i class="fa fa-play" style="font-size:15px; margin-right: 10px;"></i>Rotbehandling</h2>
+            <div id="p7" class="description">
+                <p>Trepanering, fjerning av kronepulpa, innlegg og midlertidig fylling: 1790 kr</p>
+                <p>Rotfylling tann i 1 kanal: 4890 kr</p>
+                <p>Rotfylling tann i 2 kanaler: 5490 kr</p>
+                <p>Rotfylling tann i 3 kanaler: 7290 kr</p>
+                <p>Rotfylling tann i 4 kanaler: 7490 kr</p>
+                <p>Tillegg ved revisjon: 1290 kr</p>
+            </div>
+        </div> 
+
+        <div class="service">
+            <h2 class="prices" onclick="toggleDescription('p8')"><i class="fa fa-play" style="font-size:15px; margin-right: 10px;"></i>Tannkroner og estetisk behandling</h2>
+            <div id="p8" class="description">
+                <p>Krone: 7990 kr</p>
+                <p>Krone estetisk sone: 8990 kr</p>
+                <p>Bondet skallkrone: 8990 kr</p>
+                <p>Bondet porselenfasett: 8990 kr</p>
+                <p>Fiberstift inkl. konus: 2490 kr</p>
+                <p>Bropillar: 7990 kr</p>
+            </div>
+        </div> 
+
+        <button type="button" class="booking-btn" onclick="window.location.href='booking.html';">Bestill time</button>
+
+    </div>
+    <div id="footer"></div>
+
+
+
+<script src="scripts/header.js"></script>
+<script src="scripts/footer.js"></script>
+<script src="scripts/button.js"></script>
+<script src="scripts/dropdown.js"></script>
+    
+</body>
+</html>
